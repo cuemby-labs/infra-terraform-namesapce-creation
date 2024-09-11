@@ -23,3 +23,8 @@ EOF
   type        = map(any)
   default     = {}
 }
+
+variable "namespace_name" {
+  description = "The namespace where resources will be created."
+  type        = string
+}
