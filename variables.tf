@@ -1,4 +1,13 @@
 #
+# Kubernetes variables
+#
+
+variable "namespace_name" {
+  description = "The namespace where resources will be created."
+  type        = string
+}
+
+#
 # Contextual Fields
 #
 
@@ -22,9 +31,4 @@ context:
 EOF
   type        = map(any)
   default     = {}
-}
-
-variable "namespace_name" {
-  description = "The namespace where resources will be created."
-  type        = string
 }
